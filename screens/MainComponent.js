@@ -15,14 +15,15 @@ const screenOptions = {
 
 const HomeNavigator = () => {
     const Stack = createStackNavigator();
-
-    <Stack.Navigator screenOptions={screenOptions}>
+    return (
+        <Stack.Navigator screenOptions={screenOptions}>
         <Stack.Screen
             name='Home'
             component={HomeScreen}
             options={{ title: 'Home' }}
-        />
-    </Stack.Navigator>
+            />
+        </Stack.Navigator>
+    )
 }
 
 const DirectoryNavigator = () => {
