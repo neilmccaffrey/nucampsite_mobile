@@ -124,7 +124,7 @@ const Main = () => {
     return (
         <View style={{ flex: 1, paddingTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight }}>
             <Drawer.Navigator
-                initialRouteName='Home'
+                initialRouteName='HomeNav'
                 screenOptions={{ drawerStyle: { 
                 backgroundColor: '#CEC8FF' }}}
             >
