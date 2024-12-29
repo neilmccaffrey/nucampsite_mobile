@@ -6,6 +6,7 @@ import * as Animatable from 'react-native-animatable';
 
 const RenderCampsite = ({ campsite, isFavorite, markFavorite, onShowModal }) => {
     const isLeftSwipe = ({ dx }) => dx < -200;
+    const isRightSwipe = ({ dx }) => dx > 200;
     const view = useRef();
 
     const panResponder = PanResponder.create({
@@ -43,6 +44,8 @@ const RenderCampsite = ({ campsite, isFavorite, markFavorite, onShowModal }) => 
                         ],
                         { cancelable: false }
                     );
+                }else if (isRightSwipe(gestureState)){
+                    onShowModal();
                 }
         }
     })
