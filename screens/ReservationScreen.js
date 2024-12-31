@@ -27,6 +27,7 @@ const ReservationScreen = () => {
             [
                 {
                     text: 'Cancel',
+                    style: 'cancel',
                     onPress: () => resetForm()
                 },
                 {
