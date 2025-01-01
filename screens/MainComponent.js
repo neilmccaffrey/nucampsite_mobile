@@ -236,7 +236,7 @@ const Main = () => {
                 drawerContent={CustomDrawerContent}
             >
                 <Drawer.Screen
-                    name='Login'
+                    name='LoginNav'
                     component={LoginNavigator}
                     options={{
                         drawerIcon: ({ color }) => (
@@ -283,7 +283,7 @@ const Main = () => {
                     }}
                 />
                 <Drawer.Screen
-                    name='ReserveCampsite'
+                    name='ReserveCampsiteNav'
                     component={ReservationNavigator}
                     options={{
                         title: 'Reserve Campsite',
