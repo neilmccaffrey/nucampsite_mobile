@@ -239,6 +239,7 @@ const Main = () => {
                     name='LoginNav'
                     component={LoginNavigator}
                     options={{
+                        title: 'Login',
                         drawerIcon: ({ color }) => (
                             <Icon
                                 name='sign-in'
